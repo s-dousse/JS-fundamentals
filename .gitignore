@@ -1,3 +1,11 @@
 .node_module
 .node_modules
 node_modules/
+.DS_Store
+./coverage.data
+.coverage
+coverage/clover.xml
+coverage/coverage-final.json
+coverage/lcov-report/add.js.html
+coverage/lcov-report/index.html
+coverage/lcov.info

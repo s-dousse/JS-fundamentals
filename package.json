@@ -1,7 +1,6 @@
 {
   "name": "javascript-fundamentals",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "jest"
@@ -11,5 +10,14 @@
   "license": "ISC",
   "dependencies": {
     "jest": "^27.4.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s-dousse/JS-fundamentals.git"
+  },
+  "bugs": {
+    "url": "https://github.com/s-dousse/JS-fundamentals/issues"
+  },
+  "homepage": "https://github.com/s-dousse/JS-fundamentals#readme",
+  "description": ""
 }
