@@ -1,5 +1,6 @@
 const User = require("../src/user");
 
+
 describe("User", () => {
   const user = new User("Uma");
 
