@@ -1,17 +1,16 @@
-// const filterName = (hash, prefix) => {
-//   // console.log("in filterName");
-
-//   console.log(hash.name);
-//   console.log(prefix); // prefix is a number when console.log
-//   console.log(hash.name.startsWith(prefix));
-//   hash.name.startsWith(prefix);
-// };
-
-const searchCandies = (array, prefix) => {
+const searchCandies = (prefix, maxPrice) => {
+  // we don't have an array as argument
   // filter the array using the prefix
-  return array.filter((hash) => hash.name.startsWith(prefix));
+  // example how to use filter(): const result = words.filter(word => word.length > 6);
+  const filteredByName = candies.filter((hash) => hash.name.startsWith(prefix));
+
+  // filter by max price
+  const filteredArr = filteredByName.filter((hash) => hash.price <= maxPrice);
   // filter by price range
-  // returns array of filterned names
+  // returns array but just the Names Not whole hash
+  return filteredArr.map((hash) => {
+    return hash.name;
+  });
 };
 
 const candies = [
@@ -31,19 +30,9 @@ const candies = [
 ];
 
 // console.log(filterName(candies, "Ma"));
-console.log(searchCandies(candies, "Ma"));
-// module.exports = searchCandies;
+console.log(searchCandies("Ma", 10));
+console.log(searchCandies("Ma", 2));
+console.log(searchCandies("S", 10));
+console.log(searchCandies("S", 4));
 
-//iterate over whole array
-// getCandies => array.map |candy|
-// if candy.name.startsWith(prefix)
-// return arr2.concat(candy)
-// .map to get an arrayb
-// grab name
-// and filter each with the name starting with 'foo' (filterName) => get a key
-// add whole hash to new array =>  select by key
-// returns an new array with hashes (filterName)
-
-// .map iterate over 'byname' array and filter the price (searchCandies)
-// grab only candies with price in price range
-//
+module.exports = searchCandies;

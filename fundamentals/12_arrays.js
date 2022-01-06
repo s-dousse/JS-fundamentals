@@ -24,16 +24,17 @@ const numbers = [
 ];
 
 const filterLongNumbers = (numberList) => {
-  // let verifiedNum = [];
-  for (let i = 0; 1 < numbers.length; i++) {
-    console.log(numbers[i]);
-    if (checkLength(numbers[i])) {
-      console.log(goodlength);
-    } else {
-      console.log("number too long");
-    }
-  }
-  return goodlength;
+  return numberList.filter(checkLength);
+  // // let verifiedNum = [];
+  // for (let i = 0; 1 < numbers.length; i++) {
+  //   console.log(numbers[i]);
+  //   if (checkLength(numbers[i])) {
+  //     console.log(goodlength);
+  //   } else {
+  //     console.log("number too long");
+  //   }
+  // }
+  // return goodlength;
 };
 
 console.log(filterLongNumbers(numbers));
