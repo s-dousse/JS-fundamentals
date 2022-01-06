@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1641467092220" clover="3.2.0">
-  <project timestamp="1641467092220" name="All files">
+<coverage generated="1641468155456" clover="3.2.0">
+  <project timestamp="1641468155456" name="All files">
     <metrics statements="65" coveredstatements="65" conditionals="13" coveredconditionals="13" methods="3" coveredmethods="3" elements="81" coveredelements="81" complexity="0" loc="65" ncloc="65" packages="1" files="3" classes="3"/>
     <file name="add.js" path="/Users/Swa/Desktop/Projects/week6/JS-fundamentals/src/add.js">
       <metrics statements="5" coveredstatements="5" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
@@ -39,18 +39,18 @@
       <metrics statements="38" coveredstatements="38" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
       <line num="2" count="8" type="stmt"/>
-      <line num="3" count="8" type="stmt"/>
-      <line num="4" count="8" type="stmt"/>
-      <line num="5" count="8" type="cond" truecount="1" falsecount="0"/>
-      <line num="6" count="8" type="stmt"/>
-      <line num="7" count="8" type="stmt"/>
-      <line num="8" count="8" type="cond" truecount="1" falsecount="0"/>
-      <line num="9" count="8" type="stmt"/>
-      <line num="10" count="8" type="stmt"/>
-      <line num="11" count="8" type="cond" truecount="1" falsecount="0"/>
-      <line num="12" count="16" type="stmt"/>
-      <line num="13" count="16" type="stmt"/>
-      <line num="14" count="8" type="stmt"/>
+      <line num="3" count="8" type="cond" truecount="1" falsecount="0"/>
+      <line num="4" count="104" type="stmt"/>
+      <line num="5" count="104" type="stmt"/>
+      <line num="6" count="8" type="cond" truecount="1" falsecount="0"/>
+      <line num="7" count="20" type="stmt"/>
+      <line num="8" count="20" type="stmt"/>
+      <line num="9" count="8" type="cond" truecount="1" falsecount="0"/>
+      <line num="10" count="16" type="stmt"/>
+      <line num="11" count="16" type="stmt"/>
+      <line num="12" count="8" type="stmt"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
       <line num="15" count="1" type="stmt"/>
       <line num="16" count="1" type="stmt"/>
       <line num="17" count="1" type="stmt"/>

@@ -1,17 +1,17 @@
 const searchCandies = (prefix, maxPrice) => {
-  // we don't have an array as argument
-  // filter the array using the prefix
-  // example how to use filter(): const result = words.filter(word => word.length > 6);
-  const filteredByName = candies.filter((hash) => hash.name.startsWith(prefix));
-
-  // filter by max price
-  const filteredArr = filteredByName.filter((hash) => hash.price <= maxPrice);
-  // filter by price range
-  // returns array but just the Names Not whole hash
-  return filteredArr.map((hash) => {
-    return hash.name;
-  });
+  return candies
+    .filter((candy) => {
+      return candy.name.toLowerCase().startsWith(prefix.toLowerCase());
+    })
+    .filter((candy) => {
+      return candy.price <= maxPrice;
+    })
+    .map((candy) => {
+      return candy.name;
+    });
 };
+
+// https://www.geeksforgeeks.org/chaining-of-array-methods-in-javascript/
 
 const candies = [
   { name: "Aero", price: 1.99 },
