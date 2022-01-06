@@ -16,7 +16,8 @@ function fizzBuzz(x) {
 // fizzBuzz(30);
 
 for (let i = 0; i <= 50; i++) {
-  console.log(`Fizzbuzz result for ${i} is ${fizzBuzz(i)}`);
+  // console.log(`Fizzbuzz result for ${i} is ${fizzBuzz(i)}`);
+  `Fizzbuzz result for ${i} is ${fizzBuzz(i)}`;
 }
 
 module.exports = fizzBuzz;
