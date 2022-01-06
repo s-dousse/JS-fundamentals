@@ -1,27 +1,19 @@
-// TODO : simply filterName => no iteration / get one string + prefix as prams
-// have an array of name to use . filter
-// arrayOfNames.filter(filterName)
 
-const filterName = (array, prefix) => {
-  for (i = 0; i < array.length; i++) {
-    // return array.map((candy) => {
-    // if (candy.name.startsWith(prefix)) {
-    //   return candy;
-    // } else {
-    //   return "not match";
-    // }
-    // console.log(array[i].name);
-    console.log(array[i].name.startsWith(prefix));
-    array[i].name.startsWith(prefix);
-    // return array.filter(candy.name.startsWith(prefix));
-    // });
-  }
+const filterName = (hash, prefix) => {
+  // console.log("in filterName");
+
+  console.log(hash.name);
+  console.log(prefix);
+  console.log(hash.name.startsWith(prefix));
+  hash.name.startsWith(prefix);
 };
 
 const searchCandies = (array, prefix) => {
-  filteredArr = [];
   console.log("we are here !");
   console.log(array.filter(filterName));
+  if (array.filter(filterName(prefix))) {
+    console.log("selected name");
+  }
   // filter by price range
   // returns array of filterned names
 };
@@ -42,9 +34,8 @@ const candies = [
   { name: "Fraise Tagada", price: 5.99 },
 ];
 
-// filterName(candies, "Ma");
-console.log(filterName(candies, "Ma"));
-// console.log(searchCandies(candies, "Ma"));
+// console.log(filterName(candies, "Ma"));
+console.log(searchCandies(candies, "Ma"));
 // module.exports = searchCandies;
 
 //iterate over whole array
