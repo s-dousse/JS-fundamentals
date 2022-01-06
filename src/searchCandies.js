@@ -1,19 +1,15 @@
+// const filterName = (hash, prefix) => {
+//   // console.log("in filterName");
 
-const filterName = (hash, prefix) => {
-  // console.log("in filterName");
-
-  console.log(hash.name);
-  console.log(prefix);
-  console.log(hash.name.startsWith(prefix));
-  hash.name.startsWith(prefix);
-};
+//   console.log(hash.name);
+//   console.log(prefix); // prefix is a number when console.log
+//   console.log(hash.name.startsWith(prefix));
+//   hash.name.startsWith(prefix);
+// };
 
 const searchCandies = (array, prefix) => {
-  console.log("we are here !");
-  console.log(array.filter(filterName));
-  if (array.filter(filterName(prefix))) {
-    console.log("selected name");
-  }
+  // filter the array using the prefix
+  return array.filter((hash) => hash.name.startsWith(prefix));
   // filter by price range
   // returns array of filterned names
 };
