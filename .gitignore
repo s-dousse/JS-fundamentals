@@ -1,6 +1,3 @@
-.node_module
 .node_modules
 node_modules/
-.DS_Store.coverage
-.coverage
-.coverage
+.DS_Store

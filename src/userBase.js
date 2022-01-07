@@ -17,7 +17,7 @@ class UserBase {
 
   getIntroductions() {
     return this.array.map((user) => {
-      return `Hi, my name is ${user.name}`;
+      `Hi, my name is ${user.name}`;
     });
   }
 }
@@ -28,9 +28,15 @@ class UserBase {
 //   new User("Ollie"),
 //   new User("Sarah"),
 // ];
-// const userBase2 = new UserBase(users);
-// console.log(userBase2.count());
-// console.log(userBase2.getNames());
-// console.log(userBase2.getIntroductions());
+
+const userBase2 = new UserBase([
+  new User("Uma"),
+  new User("Josh"),
+  new User("Ollie"),
+  new User("Sarah"),
+]);
+console.log(userBase2.count());
+console.log(userBase2.getNames());
+console.log(userBase2.getIntroductions());
 
 module.exports = UserBase;
